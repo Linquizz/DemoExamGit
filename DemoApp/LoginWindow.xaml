@@ -1,0 +1,31 @@
+﻿<Window x:Class="DemoApp.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoApp"
+        mc:Ignorable="d"
+        Title="Чудо Обувь - Авторизация" Height="400" Width="500"
+        Icon="/Resources/logo.ico"
+        FontFamily="Calibri" FontSize="14"
+        Background="{StaticResource MainBackgroundBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="{StaticResource AdditionalBackgroundBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Source="/Resources/logo.png" Height="65" Width="65" Margin="5" Stretch="Uniform"/>
+            <TextBlock Grid.Column="1" Text="Чудо Обувь - Авторизация" VerticalAlignment="Center" FontSize="25" />
+        </Grid>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="35">
+            <TextBlock Text="Логин" FontSize="20" Margin="0,0,0,5"></TextBlock>
+            <TextBox Height="35" FontSize="20" Padding="7" Margin="0,0,0,20"></TextBox>
+            <Button Content="Войти" Height="40" FontSize="18" Background="{StaticResource AccentBrush}" Foreground="{StaticResource MainBackgroundBrush}" BorderThickness="0" Click="LoginButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

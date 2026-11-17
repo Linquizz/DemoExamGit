@@ -1,0 +1,10 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+[Dd]ebug/
+[Rr]elease/
+*.pdf
